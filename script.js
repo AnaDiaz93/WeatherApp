@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     const errorMessage = document.getElementById('error-message');
 
-    const API_KEY = 'c91808275583bf4edd6433acbe2d9da2';
+    const API_KEY = '';
 
     getWeatherBtn.addEventListener('click', async()=>{
         const country =countryInput.value.trim()
