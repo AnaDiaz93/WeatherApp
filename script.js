@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
             displayCity.textContent = data.name + ";" + data.sys.country;
             temperatureDisplay.textContent = `${data.main.temp} C`;
-            descriptionDisplay.textContent = data.weather[0].description.charAdd(0).toUpperCase()+data.weather[0].description.slice(1);
+            descriptionDisplay.textContent = data.weather[0].description.charAt(0).toUpperCase()+data.weather[0].description.slice(1);
             humidityDisplay.textContent = `${data.main.humidity}%`;
         } catch(error){
             console.log('Hubo un problema con la operación del fetch:', error);
